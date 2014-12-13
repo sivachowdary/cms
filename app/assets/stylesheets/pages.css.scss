@@ -1,0 +1,51 @@
+// Place all the styles related to the pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+#menu {
+  list-style: none;
+  margin: 50px;
+  padding: 50px;
+}
+
+#menu li {
+  margin: 0;
+  padding: 0;
+  float: left;
+}
+
+#menu li a {
+  display: block;
+  padding: 4px 8px;
+  text-decoration: none;
+  border: solid black 1px;
+  color: black;
+  background-color: #AEBBE2;
+}
+
+#menu li a:hover {
+  color: white;
+  background-color: #4A63B8;
+}
+
+#submenu {
+  float: left;
+  list-style: none;
+  border-right: dashed #777 1px;
+  padding: 6px 14px;
+  padding-bottom: 30px;
+  margin-top: -10px;
+  margin-bottom: 100px;
+  margin-right: 20px;
+  margin-left: 0;
+  li{
+  	margin: 8px 0;
+  }
+  ul{
+  	font-size: 11px;
+  	margin: 0;
+  	padding-left: 16px;
+  	li{
+  		margin: 5px 0;
+  	}
+  }
+}

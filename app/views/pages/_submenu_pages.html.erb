@@ -1,0 +1,8 @@
+<ui>
+ <% pages.each do |page| %>
+   <li>
+   	<%= link_to_unless_current page.name, nested_page_path(page)%>
+    <%= render 'submenu_pages',pages: page.children if page.children.present?%>
+   </li>
+ <% end %>
+</ui>
